@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario Elegante</title>
+    <link rel="stylesheet" href="../_CSS/formulario.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formulario de Registro</h1>
+      <form>
+        <div class="form-group">
+          <label for="fnames">Nombres:</label>
+          <input
+            type="text"
+            id="fnames"
+            name="fnames"
+            placeholder="Ingrese sus nombres"
+            pattern="[A-Za-z ]{3,40}"
+            required
+            autofocus />
+        </div>
+
+        <div class="form-group">
+          <label for="lname">Apellidos:</label>
+          <input
+            type="text"
+            id="lname"
+            name="lname"
+            placeholder="Ingrese sus apellidos"
+            pattern="[A-Za-z ]{3,40}"
+            required />
+        </div>
+
+        <div class="form-group">
+          <label for="correo">Correo:</label>
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="Ingrese su correo"
+            required />
+        </div>
+        <div class="form-group">
+            <label for="telefono">Teléfono:</label>
+            <input 
+            type="tel"
+            id="telefono"
+            name="telefono"
+            pattern="[0-9 +\-()]{7,15}"
+            placeholder="Ingrese su núumero de teléfono"
+            required>
+        </div>
+        <div class="form-group">
+          <label>Experiencia en programación:</label>
+          <input
+            type="radio"
+            id="principiante"
+            name="experiencia"
+            value="principiante"
+            required />
+          <label
+            for="principiante"
+            style="display: inline; margin-left: 5px"
+            >Principiante</label
+          ><br />
+
+          <input
+            type="radio"
+            id="intermedio"
+            name="experiencia"
+            value="intermedio" />
+          <label
+            for="intermedio"
+            style="display: inline; margin-left: 5px"
+            >Intermedio</label
+          ><br />
+
+          <input
+            type="radio"
+            id="avanzado"
+            name="experiencia"
+            value="avanzado" />
+          <label
+            for="avanzado"
+            style="display: inline; margin-left: 5px"
+            >Avanzado</label
+          >
+        </div>
+
+        <div class="form-group">
+          <label>¿Qué habilidades tienes?</label>
+          <div class="checkbox-group">
+            <input type="checkbox" id="html" name="habilidades" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="habilidades" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="js" name="habilidades" value="JavaScript">
+            <label for="js">JavaScript</label>
+          </div>
+        </div>
+        <div class="form-group">
+  <label for="password">Contraseña:</label>
+  <input 
+    type="password" 
+    id="password" 
+    name="password" 
+    placeholder="Ingrese su contraseña" 
+    required>
+</div>
+<!-- Después de correo -->
+<div class="form-group">
+  <label for="birthdate">Fecha de nacimiento:</label>
+  <input 
+    type="date" 
+    id="birthdate" 
+    name="birthdate" 
+    required>
+</div>
+
+<div class="form-group">
+  <label for="gender">Género:</label>
+  <select id="gender" name="gender" required>
+    <option value="" disabled selected>Seleccione su género</option>
+    <option value="masculino">Masculino</option>
+    <option value="femenino">Femenino</option>
+    <option value="otro">Otro</option>
+    <option value="prefiero-no-decir">Prefiero no decir</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="profile-url">URL de perfil (opcional):</label>
+  <input 
+    type="url" 
+    id="profile-url" 
+    name="profile-url" 
+    placeholder="https://ejemplo.com/tu-perfil">
+</div>
+
+
+
+        <div class="form-buttons">
+          <button type="submit">Enviar</button>
+          <button type="reset" class="reset-btn">Borrar</button>
+        </div>
+      </form>
+    </div>
+
+    <footer>&copy; 2025</footer>
+  </body>
+</html>
